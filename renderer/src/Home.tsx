@@ -1,7 +1,7 @@
 import "./App.css";
 import { trpc } from "./utils/trpc";
 import reactLogo from "./assets/react.svg";
-
+import { Button, DatePicker, Space, version } from "antd";
 function Home() {
   const examples = trpc.example.getAll.useQuery();
   const utils = trpc.useContext();
@@ -27,6 +27,10 @@ function Home() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+      <Space>
+        <DatePicker />
+        <Button type="primary">Primary Button</Button>
+      </Space>
       <p>{greeting.data}</p>
       <button onClick={() => addExample.mutate()}>ADD example</button>
       <ul>
