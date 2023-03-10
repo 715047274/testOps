@@ -1,6 +1,6 @@
 import "./App.css";
-import { trpc } from "./utils/trpc";
-import reactLogo from "./assets/react.svg";
+import { trpc } from "./Application/utils/trpc";
+import reactLogo from "./View/assets/react.svg";
 import { Button, DatePicker, Space, version } from "antd";
 function Home() {
   const examples = trpc.example.getAll.useQuery();
