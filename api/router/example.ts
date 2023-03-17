@@ -3,7 +3,7 @@ import { randomUUID } from "crypto";
 import { z } from "zod";
 
 export const exampleRouter = t.router({
-  getAll: t.procedure.query(({ ctx }) => {
+  getAll: t.procedure.query(({ ctx })  => {
     return ctx.prisma.example.findMany();
   }),
   add: t.procedure.mutation(({ ctx }) => {

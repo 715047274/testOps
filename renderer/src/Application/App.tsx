@@ -28,7 +28,7 @@ function App() {
         <HistoryRouter history={history}>
           <Suspense fallback={null}>
             <Spin
-              spinning={true}
+              spinning={false}
               className="app-loading-wrapper"
               tip="dsdsd"
             ></Spin>
