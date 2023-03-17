@@ -1,0 +1,11 @@
+import { ReactElement } from "react";
+
+
+const About = (): ReactElement => {
+
+  return <div>this is the about page</div>;
+
+};
+
+
+export default  About

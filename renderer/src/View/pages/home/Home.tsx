@@ -1,8 +1,8 @@
-import "./App.css";
-import { trpc } from "./Application/utils/trpc";
-import reactLogo from "./View/assets/react.svg";
+//import "./App.css";
+import { trpc } from "../../../Application/utils/trpc";
+import reactLogo from "../../assets/react.svg";
 import { Button, DatePicker, Space, version } from "antd";
-function Home() {
+function HomeComponent() {
   const examples = trpc.example.getAll.useQuery();
   const utils = trpc.useContext();
   const addExample = trpc.example.add.useMutation({
@@ -52,4 +52,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomeComponent;
